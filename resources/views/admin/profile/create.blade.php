@@ -26,14 +26,14 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="gender" rows="20">{{ old('body') }}</textarea>
+                             <input type="text" class="form-control" name="gender" value="{{ old('title') }}">
                         </div>
                     </div>
                     
                      <div class="form-group row">
                         <label class="col-md-2" for="hobby">趣味</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="hobby" rows="20">{{ old('body') }}</textarea>
+                             <input type="text" class="form-control" name="hobby" value="{{ old('title') }}">
                         </div>
                     </div>
                     
