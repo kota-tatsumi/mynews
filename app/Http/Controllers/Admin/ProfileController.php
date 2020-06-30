@@ -41,7 +41,7 @@ class ProfileController extends Controller
           // それ以外はすべてのプロフィールを取得する
           $posts = Profile::all();
       }
-      return view('admin.news.index', ['posts' => $posts, 'cond_title' => $cond_title]);
+      return view('admin.profile.index', ['posts' => $posts, 'cond_title' => $cond_title]);
   }
     public function edit(Request $request)
   {
