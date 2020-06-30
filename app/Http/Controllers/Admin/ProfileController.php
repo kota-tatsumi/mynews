@@ -28,8 +28,8 @@ class ProfileController extends Controller
     {
          // 以下を追記
          // Varidationを行う
-         $this->validate($request, Profiles::$rules);
-         $profile = new Profiles;
+         $this->validate($request, Profile::$rules);
+         $profile = new Profile;
          $form = $request->all();
          // フォームから送信されてきた_tokenを削除する
          unset($form['_token']);
